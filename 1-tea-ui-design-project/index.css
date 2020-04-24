@@ -34,10 +34,7 @@ img {
   height: 1.5em;
 }
 
-.btn-nav-close {
-  align-self: flex-end;
-  margin: .4em .5em 1em 0;
-}
+.btn-nav-close { align-self: flex-end; }
 
 .nav-ul {
   display: none;
