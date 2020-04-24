@@ -29,9 +29,4 @@ img {
 
 .img-plant { max-width: unset; }
 
-
-/* ##### */
-/* UTILS */
-/* ----- */
-
-.no-horizontal-scroll { overflow-x: hidden; }
+.plant-img-clip-container { overflow-x: hidden; }
