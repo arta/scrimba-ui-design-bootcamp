@@ -23,6 +23,23 @@ img {
 }
 
 
+/* ########## */
+/* NAVIGATION */
+/* ---------- */
+
+.btn-nav-close,
+.btn-nav-open {
+  cursor: pointer;
+  height: 1.5em;
+}
+
+.nav-ul {
+  display: none;
+  flex-direction: column;
+}
+
+.show-nav-ul { display: flex; }
+
 /* ###### */
 /* IMAGES */
 /* ------ */
