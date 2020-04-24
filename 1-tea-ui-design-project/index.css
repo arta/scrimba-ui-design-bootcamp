@@ -21,3 +21,17 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+.img-plant { max-width: unset; }
+
+
+/* ##### */
+/* UTILS */
+/* ----- */
+
+.no-horizontal-scroll { overflow-x: hidden; }
