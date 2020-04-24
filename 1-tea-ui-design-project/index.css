@@ -2,6 +2,12 @@
 /* GLOBAL */
 /* ###### */
 
+:root {
+  --clr-mint: #AADFC5;
+  --clr-jade: #47946E;
+  --clr-brown: #7A4900;
+}
+
 *, *::before, *::after {
   border: 1px dotted hotpink;
   box-sizing: border-box;
