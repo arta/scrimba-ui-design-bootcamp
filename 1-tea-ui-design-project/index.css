@@ -27,6 +27,9 @@ img {
 /* IMAGES */
 /* ------ */
 
+.img-fern,
+.img-plant { display: none; }
+
 .img-plant { max-width: unset; }
 
 .plant-img-clip-container { overflow-x: hidden; }
