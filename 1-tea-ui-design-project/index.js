@@ -4,6 +4,6 @@ const openNav   = get('btn-nav-open');
 const navUl     = get('nav-ul');
 const closeNav  = get('btn-nav-close');
 
-openNav.addEventListener('click', () => navUl.classList.add('show-nav-ul'));
+openNav.addEventListener('click', () => navUl.classList.toggle('show-nav-ul'));
 
-closeNav.addEventListener('click', () => navUl.classList.remove('show-nav-ul'));
+closeNav.addEventListener('click', () => navUl.classList.toggle('show-nav-ul'));
