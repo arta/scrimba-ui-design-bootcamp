@@ -41,6 +41,8 @@ img {
 
 .show-nav-ul { display: flex; }
 
+.hide-btn-nav-open { display: none; }
+
 
 /* ###### */
 /* LAYOUT */
