@@ -32,9 +32,6 @@ img {
 h1,
 p { margin-top: 0; }
 
-.a-btn,
-.a-logo { text-decoration: none; }
-
 h1 {
   font-family: 'Cinzel', serif;
   font-size: 2em;
@@ -43,16 +40,13 @@ h1 {
   margin-bottom: 1em;
 }
 
-.a-btn {
-  border-radius: .25em;
-  display: inline-block;
-  padding: .4em 1.6em;
-}
-
 
 /* ########## */
 /* NAVIGATION */
 /* ---------- */
+
+.a-btn,
+.a-logo { text-decoration: none; }
 
 .btn-nav-close,
 .btn-nav-open {
@@ -60,7 +54,21 @@ h1 {
   height: 1.5em;
 }
 
+.a-btn {
+  border-radius: .25em;
+  display: inline-block;
+  padding: .4em 1.6em;
+}
+
+.a-nav {
+  display: block;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+
 .btn-nav-close { align-self: flex-end; }
+
+.hide-btn-nav-open { visibility: hidden; }
 
 .nav-ul {
   display: none;
@@ -75,15 +83,7 @@ h1 {
 
 .nav-ul-li { margin: 1em 0; }
 
-.a-nav {
-  display: block;
-  padding: .5em 1em;
-  text-decoration: none;
-}
-
 .show-nav-ul { display: flex; }
-
-.hide-btn-nav-open { visibility: hidden; }
 
 
 /* ###### */
