@@ -3,7 +3,7 @@
 /* ------ */
 
 *, *::before, *::after {
-  /* border: 1px dotted hotpink; */
+  border: 1px dotted hotpink;
   box-sizing: border-box;
 }
 
@@ -144,11 +144,30 @@ main {
 .img-fern { display: none; }
 
 .img-plant {
-  opacity: .5;
+  display: unset;
   max-width: unset;
+
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: -30px; */
+
+  /* right: 4em; */
+  /* bottom: 12em; */
+  /* left: 0; */
+
+  /* margin-right: 4em;
+  margin-bottom: -12em; */
+
+  /* opacity: .5; */
+  width: 350px;
 }
 
 .plant-img-clip-container {
-  margin-left: 1em;
-  overflow-x: hidden;
+  /* overflow: hidden; */
+  position: absolute;
+  top: 0;
+  /* right: -10px; */
+  /* bottom: 0; */
+  /* left: 0; */
 }
