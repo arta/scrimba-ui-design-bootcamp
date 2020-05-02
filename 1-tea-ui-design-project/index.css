@@ -144,30 +144,60 @@ main {
 .img-fern { display: none; }
 
 .img-plant {
+  /* --- unset img global defaults set atop --- */
   display: unset;
   max-width: unset;
+  /* --- eof unset --- */
+
+  position: absolute;
+  right: -1%;
+  bottom: -26%;
+  width: 450px;
+}
+
+.plant-img-clip-container {
+  overflow: hidden;
+  position: absolute;
+  right: 0; bottom: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+}
+
+
+/* ###################### */
+/* POSITIONING PLAYGROUND */
+/* ---------------------- */
+
+.img-plant {
+  /* --- unset img global defaults set atop --- */
+  /* display: unset; */
+  /* max-width: unset; */
+  /* --- eof unset --- */
+
+  /* border: 3px solid green; */
 
   /* position: absolute; */
-  /* top: 0; */
-  /* right: 0; */
-  /* bottom: -30px; */
-
+  /* top: 10px; */
+  /* right: 30px; */
+  /* bottom: 0px; */
+  /* bottom: -60px; */
+  /* left: -5.2em; */
   /* right: 4em; */
   /* bottom: 12em; */
   /* left: 0; */
 
-  /* margin-right: 4em;
-  margin-bottom: -12em; */
-
-  /* opacity: .5; */
-  width: 350px;
+  /* width: 350px; */
 }
 
 .plant-img-clip-container {
+  /* border: 3px solid blue; */
+
   /* overflow: hidden; */
-  position: absolute;
-  top: 0;
-  /* right: -10px; */
+
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: -4em; */
+  /* right: 0; */
   /* bottom: 0; */
-  /* left: 0; */
+  /* left: 30px; */
 }
