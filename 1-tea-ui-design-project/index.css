@@ -71,6 +71,7 @@ p { line-height: 1.4; }
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
+  padding: .2em 0;
 }
 
 .a-nav {
@@ -98,7 +99,7 @@ p { line-height: 1.4; }
   height: 53vh;
   list-style: none;
   margin: 0;
-  padding: 1.2em 1em 2em 1em;
+  padding: 1.2em .8em 2em .8em;
   position: absolute; top: 0; right: 0;
   width: 55%;
 }
@@ -177,6 +178,42 @@ main {
   width: 100vw; height: 100vh;
   z-index: -1;
 }
+
+
+/* ############## */
+/* MOBILE QUERIES */
+/* -------------- */
+
+@media (min-width: 600px) {
+
+  .nav-ul-li,
+  .nav-ul-li:first-of-type { margin: unset; }
+
+  .btn-nav-close,
+  .btn-nav-open { display: none; }
+
+  .nav-ul-li +
+  .nav-ul-li { margin-left: .6em; }
+
+  .a-nav {
+    font-size: 1rem;
+    padding: .2em 1em;
+  }
+
+  .nav-ul {
+    display: flex;
+    flex-direction: unset;
+    height: unset;
+    padding: unset;
+    position: unset;
+    width: unset;
+  }
+
+  /* .container--header { padding: unset; } */
+
+}
+
+
 
 
 /* ###################### */
