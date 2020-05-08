@@ -1,14 +1,14 @@
 const get = (elementId) => document.getElementById(elementId);
 
-const btnNavOpen  = get('btn-nav-open');
-const ulNav       = get('ul-nav');
-const btnNavClose = get('btn-nav-close');
+const btnOpenUlNav  = get('btn-open-ul-nav');
+const ulNav         = get('ul-nav');
+const btnCloseUlNav = get('btn-close-ul-nav');
 
-function toggleNav() {
-  ulNav.classList.toggle('show-ul-nav');
-  btnNavOpen.classList.toggle('hide-btn-nav-open');
+function toggleUlNav() {
+  ulNav.classList.toggle('ul-nav--displayed');
+  btnOpenUlNav.classList.toggle('btn-open-ul-nav--hidden');
 };
 
-btnNavOpen.addEventListener('click', () => toggleNav());
+btnOpenUlNav.addEventListener('click', () => toggleUlNav());
 
-btnNavClose.addEventListener('click', () => toggleNav());
+btnCloseUlNav.addEventListener('click', () => toggleUlNav());
