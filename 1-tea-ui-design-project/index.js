@@ -1,11 +1,11 @@
 const get = (elementId) => document.getElementById(elementId);
 
 const btnNavOpen  = get('btn-nav-open');
-const navUl       = get('nav-ul');
+const ulNav       = get('ul-nav');
 const btnNavClose = get('btn-nav-close');
 
 function toggleNav() {
-  navUl.classList.toggle('show-nav-ul');
+  ulNav.classList.toggle('show-ul-nav');
   btnNavOpen.classList.toggle('hide-btn-nav-open');
 };
 
