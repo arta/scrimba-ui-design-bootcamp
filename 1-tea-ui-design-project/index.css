@@ -209,11 +209,13 @@ main {
     width: unset;
   }
 
-  /* .container--header { padding: unset; } */
+  .img-plant {
+    right: -10%;
+    bottom: -20%;
+    width: 610px;
+  }
 
 }
-
-
 
 
 /* ###################### */
