@@ -171,7 +171,7 @@ main {
   width: 410px;
 }
 
-.plant-img-clip-container {
+.img-plant-clip-container {
   overflow: hidden;
   position: absolute;
   right: 0; bottom: 0;
@@ -243,7 +243,7 @@ main {
   /* width: 350px; */
 }
 
-.plant-img-clip-container {
+.img-plant-clip-container {
   /* border: 3px solid blue; */
 
   /* overflow: hidden; */
