@@ -100,7 +100,7 @@ p { line-height: 1.4; }
   background: var(--clr-brown);
   display: none;
   flex-direction: column;
-  height: 53vh;
+  height: 59vh;
   list-style: none;
   margin: 0;
   padding: 1.2em .8em 2em .8em;
