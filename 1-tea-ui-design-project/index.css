@@ -98,6 +98,7 @@ p { line-height: 1.4; }
 
 .ul-nav {
   background: var(--clr-brown);
+  border-bottom-left-radius: .5em;
   display: none;
   flex-direction: column;
   height: 59vh;
