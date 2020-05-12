@@ -6,6 +6,7 @@
   --clr-primary:   #1A004E;
   --clr-secondary: #8040FF;
   --clr-gray:      #797979;
+  --clr-error:     #c94d4d;
 }
 
 *,
@@ -100,12 +101,14 @@ main {
 input,
 label { display: block; }
 
+input,
+.p-error-message { margin-bottom: 1.125em; }
+
 input {
   border: 1px solid gray;
   border-radius: 2px;
   font-family: inherit;
   font-size: inherit;
-  margin-bottom: 1.125em;
   padding: 3px 6px;
   width: 100%;
 }
@@ -115,8 +118,13 @@ label {
   margin-bottom: .5em;
 }
 
-form {
-  margin-bottom: 2.5em;
+form { margin-bottom: 2.5em; }
+
+.input-error {
+  border: 1.2px solid var(--clr-error);
+  margin-bottom: .375em;
 }
+
+.p-error-message { color: var(--clr-error); }
 
 .submit-form { margin-top: 2.5em; }
