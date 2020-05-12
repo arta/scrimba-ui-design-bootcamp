@@ -3,8 +3,9 @@
 /* ------ */
 
 :root {
-  --clr-primary: #1A004E;
-  --clr-gray:    #797979;
+  --clr-primary:   #1A004E;
+  --clr-secondary: #8040FF;
+  --clr-gray:      #797979;
 }
 
 *,
@@ -28,6 +29,23 @@ body {
 h1,
 h2,
 p { margin-top: 0; }
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  background: currentColor;
+  border-radius: 1em;
+  position: absolute;
+  top: -.375em;
+  left: 0;
+  width: 2em;
+  height: .2em;
+}
 
 .li-progress { flex-basis: 31%; }
 
@@ -67,3 +85,10 @@ main {
   padding: .5em;
   text-align: center;
 }
+
+.section-form {
+  padding: 1em;
+  text-align: left;
+  margin: 2em auto;
+}
+
