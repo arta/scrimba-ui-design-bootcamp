@@ -2,6 +2,11 @@
 /* GLOBAL */
 /* ------ */
 
+:root {
+  --clr-primary: #1A004E;
+  --clr-gray:    #797979;
+}
+
 *,
 *::after,
 *::before {
