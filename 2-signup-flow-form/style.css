@@ -24,6 +24,35 @@ h1,
 h2,
 p { margin-top: 0; }
 
+.li-progress { flex-basis: 31%; }
+
+.ol-progress {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 2em auto;
+  padding: 0;
+  width: 20em;
+}
+
+.span-circle {
+  border-radius: 50%;
+  display: grid;
+  margin-bottom: .5em;
+  place-content: center;
+  width: 3em;
+  height: 3em;
+}
+
+.span-circle--current { border: 1px solid black; }
+
+.a-progress {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
 
 /* ###### */
 /* LAYOUT */
