@@ -106,6 +106,9 @@ label { display: block; }
 input,
 .p-error-message { margin-bottom: 1.125em; }
 
+label,
+.p-error-message { font-weight: bold; }
+
 input {
   border: 1px solid gray;
   border-radius: 2px;
@@ -133,8 +136,7 @@ form { margin-bottom: 2.5em; }
 
 .p-error-message {
   background: var(--clr-error);
-  font-size: .9rem;
-  /* font-weight: bold; */
+  font-size: .875rem;
   display: inline-block;
   letter-spacing: .5px;
   margin-top: -.1em;
