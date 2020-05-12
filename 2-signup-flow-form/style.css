@@ -4,9 +4,10 @@
 
 :root {
   --clr-primary:   #1A004E;
-  --clr-secondary: #8040FF;
+  --clr-accent:    #8040FF;
   --clr-grey:      #797979; /* progress */
   --clr-chalice:   #ACACAC; /* input border */
+  --clr-cloud:     #F0F0F0;
   --clr-error:     #FFB3B3;
   --clr-haiti:     #1B1820; /* input text */
 }
@@ -19,6 +20,7 @@
 }
 
 body {
+  color: var(--clr-primary);
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   margin: 0;
@@ -34,7 +36,10 @@ h2,
 p { margin-top: 0; }
 
 .span-circle,
-.a-progress { font-weight: bold; }
+.a-progress {
+  color: var(--clr-grey);
+  font-weight: bold;
+}
 
 h2 {
   font-size: 1.3rem;
@@ -44,13 +49,13 @@ h2 {
 
 h2::after {
   content: '';
-  background: currentColor;
+  background: var(--clr-accent);
   border-radius: 1em;
   position: absolute;
   top: -.375em;
   left: 0;
   width: 2em;
-  height: .2em;
+  height: .3em;
 }
 
 p:last-child { margin-bottom: 0; }
@@ -67,6 +72,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .span-circle {
+  background: white;
   border-radius: 50%;
   display: grid;
   margin-bottom: .5em;
@@ -75,7 +81,10 @@ p:last-child { margin-bottom: 0; }
   height: 3em;
 }
 
-.span-circle--current { border: 1px solid black; }
+.span-circle--current {
+  background: var(--clr-primary);
+  color: white;
+}
 
 .a-progress {
   align-items: center;
@@ -84,20 +93,25 @@ p:last-child { margin-bottom: 0; }
   text-decoration: none;
 }
 
+.a-progress--current { color: var(--clr-primary); }
+
 
 /* ###### */
 /* LAYOUT */
 /* ------ */
 
 main {
+  background: var(--clr-cloud);
   padding: 2em .5em;
   text-align: center;
 }
 
 .section-form {
+  background: white;
   padding: 1em;
   text-align: left;
   margin: 2em auto 0;
+  padding-top: 2.5em;
 }
 
 
@@ -127,10 +141,7 @@ input {
   width: 100%;
 }
 
-label {
-  color: grey;
-  margin-bottom: .5em;
-}
+label { margin-bottom: .5em; }
 
 form { margin-bottom: 2.5em; }
 
@@ -148,4 +159,11 @@ form { margin-bottom: 2.5em; }
   padding: .3em .5em;
 }
 
-.submit-form { margin-top: 2.5em; }
+.submit-form {
+  border: unset;
+  background: var(--clr-accent);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 2.5em;
+}
