@@ -11,7 +11,7 @@
 *,
 *::after,
 *::before {
-  border: 1px dotted hotpink;
+  /* border: 1px dotted hotpink; */
   box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ p { margin-top: 0; }
 
 h2 {
   font-size: 1.3rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.375em;
   position: relative;
 }
 
@@ -92,3 +92,31 @@ main {
   margin: 2em auto;
 }
 
+
+/* ##### */
+/* FORMS */
+/* ----- */
+
+input,
+label { display: block; }
+
+input {
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: inherit;
+  margin-bottom: 1.125em;
+  padding: 3px 6px;
+  width: 100%;
+}
+
+label {
+  color: grey;
+  margin-bottom: .5em;
+}
+
+form {
+  margin-bottom: 2.5em;
+}
+
+.submit-form { margin-top: 2.5em; }
