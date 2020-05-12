@@ -13,3 +13,22 @@ body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
 }
+
+
+/* ########## */
+/* TYPOGRAPHY */
+/* ---------- */
+
+h1,
+h2,
+p { margin-top: 0; }
+
+
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+main {
+  padding: .5em;
+  text-align: center;
+}
