@@ -100,6 +100,10 @@ main {
 /* FORMS */
 /* ----- */
 
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='submit']:focus { outline: 3px solid var(--clr-chalice); }
+
 input,
 label { display: block; }
 
@@ -111,16 +115,12 @@ label,
 
 input {
   border: 1px solid gray;
-  border-radius: 2px;
+  border-radius: .2em;
   font-family: inherit;
   font-size: inherit;
   padding: .875em;
   width: 100%;
 }
-
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='submit']:focus { outline: 3px solid var(--clr-chalice); }
 
 label {
   color: grey;
