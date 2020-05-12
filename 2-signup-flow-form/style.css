@@ -7,7 +7,7 @@
   --clr-secondary: #8040FF;
   --clr-grey:      #797979; /* progress */
   --clr-chalice:   #ACACAC; /* input border */
-  --clr-error:     #c94d4d;
+  --clr-error:     #FFB3B3;
   --clr-haiti:     #1B1820; /* input text */
 }
 
@@ -127,10 +127,18 @@ label {
 form { margin-bottom: 2.5em; }
 
 .input-error {
-  border: 1.2px solid var(--clr-error);
-  margin-bottom: .375em;
+  border: 3px solid var(--clr-error);
+  margin-bottom: 0;
 }
 
-.p-error-message { color: var(--clr-error); }
+.p-error-message {
+  background: var(--clr-error);
+  font-size: .9rem;
+  /* font-weight: bold; */
+  display: inline-block;
+  letter-spacing: .5px;
+  margin-top: -.1em;
+  padding: .3em .5em;
+}
 
 .submit-form { margin-top: 2.5em; }
