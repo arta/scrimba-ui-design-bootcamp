@@ -181,6 +181,8 @@ form { margin-bottom: 2.5em; }
 
 @media (min-width: 900px) {
 
+  h2 { font-size: 1.6125rem; }
+
   form,
   .submit-form { margin-bottom: 0; }
 
