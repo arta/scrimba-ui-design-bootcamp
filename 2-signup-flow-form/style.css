@@ -119,18 +119,29 @@ main {
 /* FORMS */
 /* ----- */
 
+label,
+.p-error-message,
+.a-previous-step-form,
+.input-submit { font-weight: bold; }
+
 input[type='text']:focus,
 input[type='email']:focus,
 input[type='submit']:focus { outline: 3px solid var(--clr-chalice); }
 
 input,
-label { display: block; }
+label,
+.a-previous-step-form { display: block; }
 
 input,
 .p-error-message { margin-bottom: 1.125em; }
 
-label,
-.p-error-message { font-weight: bold; }
+.a-previous-step-form,
+.input-submit {
+  background: var(--clr-accent);
+  color: white;
+  flex-basis: 45%;
+  font-size: 1.125rem;
+}
 
 input {
   border: 1px solid gray;
@@ -159,13 +170,22 @@ form { margin-bottom: 2.5em; }
   padding: .3em .5em;
 }
 
-.submit-form {
+.input-submit {
   border: unset;
-  background: var(--clr-accent);
-  color: white;
-  font-size: 1.125rem;
-  font-weight: bold;
-  margin-top: 2.5em;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.a-previous-step-form {
+  border-radius: .2em;
+  padding: .875em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttons-form {
+  display: flex;
+  margin-top: 2.625em;
 }
 
 
@@ -184,7 +204,7 @@ form { margin-bottom: 2.5em; }
   h2 { font-size: 1.6125rem; }
 
   form,
-  .submit-form { margin-bottom: 0; }
+  .input-submit { margin-bottom: 0; }
 
   aside {
     /* A) without grid-auto-flow:dense */
