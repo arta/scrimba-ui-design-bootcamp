@@ -1,0 +1,14 @@
+select {
+  /* Remove browsers' native style */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  /* Declare custom style */
+  background:url('http://www.free-icons-download.net/images/small-down-arrow-icon-15593.png');
+  background-repeat: no-repeat;
+  background-size: 16px 17px;
+  background-position: right;
+  background-origin: content-box;
+}
+
