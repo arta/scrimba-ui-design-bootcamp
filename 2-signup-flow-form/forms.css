@@ -62,7 +62,10 @@ form { margin-bottom: 2.5em; }
   margin-bottom: 0;
 }
 
-.label-inline { margin-left: .5em; }
+.label-inline {
+  font-weight: normal;
+  margin-left: .5em;
+}
 
 .p-error-message {
   background: var(--clr-error);
