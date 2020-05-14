@@ -4,7 +4,7 @@
 
 label,
 .p-error-message,
-.a-previous-step-form,
+.a-back-step-form,
 .input-submit { font-weight: bold; }
 
 input[type='text']:focus,
@@ -17,7 +17,7 @@ input,
 label,
 select,
 textarea,
-.a-previous-step-form { display: block; }
+.a-back-step-form { display: block; }
 
 input,
 select,
@@ -25,7 +25,7 @@ textarea,
 .p-error-message,
 .radio-buttons { margin-bottom: 1.125em; }
 
-.a-previous-step-form,
+.a-back-step-form,
 .input-submit {
   background: var(--clr-accent);
   color: white;
@@ -57,7 +57,7 @@ label { margin-bottom: .5em; }
 
 form { margin-bottom: 2.5em; }
 
-.input-error {
+.input-with-error {
   border: 3px solid var(--clr-error);
   margin-bottom: 0;
 }
@@ -80,7 +80,7 @@ form { margin-bottom: 2.5em; }
   margin-left: auto;
 }
 
-.a-previous-step-form {
+.a-back-step-form {
   border-radius: .2em;
   padding: .875em;
   text-align: center;
