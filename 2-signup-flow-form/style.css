@@ -35,6 +35,15 @@ h1,
 h2,
 p { margin-top: 0; }
 
+/* Rare situation where compound selector makes sense */
+/* Simplifies & improves readability of both, markup & CSS */
+.li-progress.current .span-circle {
+  background: var(--clr-primary);
+  color: white;
+}
+
+.li-progress.current .a-progress { color: var(--clr-primary); }
+
 .span-circle,
 .a-progress {
   color: var(--clr-grey);
@@ -81,19 +90,12 @@ p:last-child { margin-bottom: 0; }
   height: 3em;
 }
 
-.span-circle--current {
-  background: var(--clr-primary);
-  color: white;
-}
-
 .a-progress {
   align-items: center;
   display: flex;
   flex-direction: column;
   text-decoration: none;
 }
-
-.a-progress--current { color: var(--clr-primary); }
 
 
 /* ###### */
