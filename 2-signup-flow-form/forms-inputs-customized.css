@@ -11,3 +11,31 @@ select {
   background-repeat: no-repeat;
   background-size: 16px 17px;
 }
+
+input[type="radio"] {
+  /* Remove browsers' native style */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Declare custom style */
+  border: 2px solid #C6C6C6;
+  border-radius: 50px;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+input[type="radio"]:checked::before {
+  background: #8040FF;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 16px;
+  height: 16px;
+}
