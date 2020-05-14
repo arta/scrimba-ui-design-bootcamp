@@ -175,6 +175,7 @@ form { margin-bottom: 2.5em; }
 .input-submit {
   border: unset;
   cursor: pointer;
+  margin-bottom: 0;
   margin-left: auto;
 }
 
