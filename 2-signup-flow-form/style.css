@@ -128,14 +128,21 @@ label,
 
 input[type='text']:focus,
 input[type='email']:focus,
-input[type='submit']:focus { outline: 3px solid var(--clr-chalice); }
+input[type='submit']:focus,
+select:focus,
+textarea:focus { outline: 3px solid var(--clr-chalice); }
 
 input,
 label,
+select,
+textarea,
 .a-previous-step-form { display: block; }
 
 input,
-.p-error-message { margin-bottom: 1.125em; }
+select,
+textarea,
+.p-error-message,
+.radio-buttons { margin-bottom: 1.125em; }
 
 .a-previous-step-form,
 .input-submit {
@@ -145,7 +152,9 @@ input,
   font-size: 1.125rem;
 }
 
-input {
+input,
+select,
+textarea {
   border: 1px solid gray;
   border-radius: .2em;
   font-family: inherit;
@@ -153,6 +162,15 @@ input {
   padding: .875em;
   width: 100%;
 }
+
+input[type='radio'],
+.label-inline {
+  margin: 0;
+  width: unset;
+}
+
+.label-inline +
+input[type='radio'] { margin-left: 1em; }
 
 label { margin-bottom: .5em; }
 
@@ -162,6 +180,8 @@ form { margin-bottom: 2.5em; }
   border: 3px solid var(--clr-error);
   margin-bottom: 0;
 }
+
+.label-inline { margin-left: .5em; }
 
 .p-error-message {
   background: var(--clr-error);
@@ -189,6 +209,11 @@ form { margin-bottom: 2.5em; }
 .buttons-form {
   display: flex;
   margin-top: 2.625em;
+}
+
+.radio-buttons {
+  align-items: center;
+  display: flex;
 }
 
 
