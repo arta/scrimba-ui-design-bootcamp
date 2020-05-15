@@ -12,7 +12,7 @@ select {
   background-size: 16px 17px;
 }
 
-input[type="radio"] {
+input[type=radio] {
   /* Remove browsers' native style */
   appearance: none;
   -webkit-appearance: none;
@@ -28,7 +28,7 @@ input[type="radio"] {
   height: 30px;
 }
 
-input[type="radio"]:checked::before {
+input[type=radio]:checked::before {
   background: #8040FF;
   border-radius: 50%;
   content: '';
