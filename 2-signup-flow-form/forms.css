@@ -44,8 +44,10 @@ textarea {
   width: 100%;
 }
 
+input[type='checkbox'],
 input[type='radio'],
 .label-inline {
+  display: inline;
   margin: 0;
   width: unset;
 }

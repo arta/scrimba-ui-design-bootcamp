@@ -22,7 +22,6 @@ input[type="radio"] {
   border-radius: 50px;
   color: #666;
   cursor: pointer;
-  display: inline-block;
   outline: none;
   position: relative;
   width: 30px;
