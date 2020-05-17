@@ -11,7 +11,88 @@
 
 body {
   background: #F1F1F1 url(graph-bg.svg) no-repeat;
+  background-position: 0 20%;
+  background-size: 150%;
   font-family: 'Montserrat';
   margin: 0;
+  text-align: center;
 }
 
+
+/* ########## */
+/* TYPOGRAPHY */
+/* ---------- */
+
+h1,
+.p-quote { font-family: 'Playfair Display', serif; }
+
+h1 {
+  margin: 0 auto 1.5em;
+  width: 70%;
+}
+
+.li-quote { margin-bottom: 2em; }
+
+.ul-quotes {
+  list-style: none;
+  margin: 0 auto 2em;
+  padding: 0;
+  width: 80%;
+}
+
+.a-cta {
+  background: #1DB473;
+  border-radius: .3em;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  text-decoration: none;
+}
+
+
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+/* Must position to stack up on top of .img-phone */
+/* https://philipwalton.com/articles/what-no-one-told-you-about-z-index */
+.col,
+.wrapper { position: relative; }
+
+.col-left {
+  display: grid;
+  height: 50vh;
+  place-content: center;
+}
+
+.col-right { margin-top: 12em; }
+
+.wrapper {
+  margin-top: 4em;
+  padding: .5em;
+}
+
+
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+/* Heads up: absolutely centered !!! */
+/* i.e. lifted from the page & centered */
+/* But now we must position (see above)
+  both, .wrapper as well as .col
+  to stack them on top of .img-phone */
+.img-phone {
+  margin: auto;
+  position: absolute;
+  top: 2em;
+  right: 0;
+  left: 0;
+  width: 250px;
+}
+
+.img-portrait {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
