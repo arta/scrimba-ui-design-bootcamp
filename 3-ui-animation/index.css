@@ -10,6 +10,7 @@
 }
 
 body {
+  background: #F1F1F1 url(graph-bg.svg) no-repeat;
   font-family: 'Montserrat';
   margin: 0;
 }
