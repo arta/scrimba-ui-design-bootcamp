@@ -54,9 +54,13 @@ h1 {
 /* LAYOUT */
 /* ------ */
 
-/* Must position to stack up on top of .img-phone */
+/* Must position .col to stack it up on top of .img-phone */
+/* Or, simply: .img-phone {.. z-index: -1; ..} */
+/* Excellent writeup: */
 /* https://philipwalton.com/articles/what-no-one-told-you-about-z-index */
-.col,
+ /* Redundant if .img-phone {.. z-index: -1; ..}: */
+.col { position: relative; }
+ /* Redundant if .img-phone {.. top: 6em; ..}: */
 .wrapper { position: relative; }
 
 .col-left {
@@ -85,10 +89,14 @@ h1 {
 .img-phone {
   margin: auto;
   position: absolute;
+  /* Make .wrapper {.. position: relative; ..} redundant with:  */
+  /* top: 6em; */
   top: 2em;
   right: 0;
   left: 0;
   width: 250px;
+  /* Instead of .col { position: relative; }: */
+  /* z-index: -1; */
 }
 
 .img-portrait {
