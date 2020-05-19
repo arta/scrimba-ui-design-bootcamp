@@ -60,8 +60,6 @@ h1 {
 /* https://philipwalton.com/articles/what-no-one-told-you-about-z-index */
  /* Redundant if .img-phone {.. z-index: -1; ..}: */
 .col { position: relative; }
- /* Redundant if .img-phone {.. top: 6em; ..}: */
-.wrapper { position: relative; }
 
 .col-left {
   display: grid;
@@ -74,6 +72,8 @@ h1 {
 .wrapper {
   margin-top: 4em;
   padding: .5em;
+  /* Is a containing block for .img-phone */
+  position: relative;
 }
 
 
@@ -83,14 +83,11 @@ h1 {
 
 /* Heads up: absolutely centered !!! */
 /* i.e. lifted from the page & centered */
-/* But now we must position (see above)
-  both, .wrapper as well as .col
+/* But now we must position .col (see above)
   to stack them on top of .img-phone */
 .img-phone {
   margin: auto;
   position: absolute;
-  /* Make .wrapper {.. position: relative; ..} redundant with:  */
-  /* top: 6em; */
   top: 2em;
   right: 0;
   left: 0;
