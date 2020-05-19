@@ -69,11 +69,11 @@ h1 {
 
 .col-right { margin-top: 12em; }
 
-.wrapper {
-  margin-top: 4em;
-  padding: .5em;
+.container {
+  margin: 4em auto 0;
   /* Is a containing block for .img-phone */
   position: relative;
+  width: 96%;
 }
 
 
@@ -129,6 +129,7 @@ h1 {
     display: grid;
     height: 100vh;
     place-content: center;
+    place-items: center;
     text-align: left;
   }
 
@@ -163,16 +164,15 @@ h1 {
 
   .col-right { margin-top: unset; }
 
-  .wrapper {
+  .container {
     display: flex;
     margin: unset;
-    padding: 2em;
   }
 
   /* ---------------------- */
 
   .img-phone {
-    left: 10%;
+    left: 6%;
     margin: unset;
     top: 1.7em;
   }
