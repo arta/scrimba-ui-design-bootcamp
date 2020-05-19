@@ -5,7 +5,7 @@
 *,
 *::after,
 *::before {
-  border: 1px dotted hotpink;
+  /* border: 1px dotted hotpink; */
   box-sizing: border-box;
 }
 
@@ -47,7 +47,10 @@ h1 {
   font-weight: bold;
   padding: 1em;
   text-decoration: none;
+  transition: background .2s ease-in-out;
 }
+
+.a-cta:hover { background: #00995A; }
 
 
 /* ###### */
