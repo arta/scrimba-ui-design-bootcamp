@@ -82,11 +82,13 @@ h1 {
 /* IMAGES */
 /* ------ */
 
+
 /* Heads up: absolutely centered !!! */
 /* i.e. lifted from the page & centered */
 /* But now we must position .col-left (see above)
   to stack it atop of .img-phone */
 .img-phone {
+  animation: fadeSlideIn 1s ease;
   margin: auto;
   position: absolute;
   top: 2em;
@@ -95,6 +97,16 @@ h1 {
   width: 250px;
   /* Instead of .col-left { position: relative; }: */
   /* z-index: -1; */
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .img-portrait {
