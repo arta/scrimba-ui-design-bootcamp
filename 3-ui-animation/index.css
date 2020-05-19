@@ -62,10 +62,22 @@ h1 {
 /* Excellent writeup: */
 /* https://philipwalton.com/articles/what-no-one-told-you-about-z-index */
 .col-left {
+  animation: fadeSlideDown 1s ease;
   display: grid;
   height: 50vh;
   place-content: center;
   position: relative;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .col-right { margin-top: 12em; }
@@ -98,6 +110,7 @@ h1 {
   /* Instead of .col-left { position: relative; }: */
   /* z-index: -1; */
 }
+
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
