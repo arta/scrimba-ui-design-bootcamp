@@ -31,7 +31,7 @@ h1 {
   width: 70%;
 }
 
-.li-quote { margin-bottom: 2em; }
+.li-ul-quotes { margin-bottom: 2em; }
 
 .ul-quotes {
   list-style: none;
@@ -141,7 +141,7 @@ h1 {
 
   .p-auth { font-size: .8em; }
 
-  .li-quote {
+  .li-ul-quotes {
     align-items: center;
     background: #e8e8e8;
     border-radius: 1em;
@@ -151,9 +151,9 @@ h1 {
     padding: 0 1em;
   }
 
-  .li-quote:first-child { transform: translateX(-2em); }
+  .li-ul-quotes:first-child { transform: translateX(-2em); }
 
-  .li-quote:nth-child(2) { transform: translateX(2em); }
+  .li-ul-quotes:nth-child(2) { transform: translateX(2em); }
 
   .ul-quotes { width: unset; }
 
