@@ -124,3 +124,66 @@ h1 {
 
 }
 
+@media (min-width: 850px) {
+
+  body {
+    background-position-y: 80%;
+    background-size: 100%;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    text-align: left;
+  }
+
+  /* ---------------------- */
+
+  h1 { width: unset; }
+
+  .p-auth { font-size: .8em; }
+
+  .li-quote {
+    align-items: center;
+    background: #e8e8e8;
+    border-radius: 1em;
+    column-gap: .7em;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 1em;
+  }
+
+  .li-quote:first-child { transform: translateX(-2em); }
+
+  .li-quote:nth-child(2) { transform: translateX(2em); }
+
+  .ul-quotes { width: unset; }
+
+  /* ---------------------- */
+
+  .col-left,
+  .col-right { padding: 3em; }
+
+  .col-left { flex-basis: 75%; }
+
+  .col-right { margin-top: unset; }
+
+  .wrapper {
+    display: flex;
+    margin: unset;
+    padding: 2em;
+  }
+
+  /* ---------------------- */
+
+  .img-phone {
+    left: 10%;
+    margin: unset;
+    top: 1.7em;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  body { font-size: 1.07rem; }
+
+}
