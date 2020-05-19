@@ -100,7 +100,7 @@ h1 {
 /* But now we must position .col-left (see above)
   to stack it atop of .img-phone */
 .img-phone {
-  animation: fadeSlideIn 1s ease;
+  animation: fadeSlideUp 1s ease;
   margin: auto;
   position: absolute;
   top: 2em;
@@ -111,7 +111,7 @@ h1 {
   /* z-index: -1; */
 }
 
-@keyframes fadeSlideIn {
+@keyframes fadeSlideUp {
   0% {
     opacity: 0;
     transform: translateY(20%);
