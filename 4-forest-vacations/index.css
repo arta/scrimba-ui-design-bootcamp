@@ -1,0 +1,14 @@
+/* ###### */
+/* GLOBAL */
+/* ______ */
+
+*,
+*::after,
+*::before {
+  border: 1px dotted hotpink;
+  box-sizing: border-box;
+}
+
+body {
+
+}
