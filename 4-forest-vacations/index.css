@@ -49,6 +49,7 @@ header {
   background: var(--clr-fog);
   display: flex;
   justify-content: space-between;
+  padding: .5em;
 }
 
 .li-nav { margin-bottom: 1em; }
