@@ -3,6 +3,8 @@
 /* ------ */
 
 :root {
+  --clr-fog: #EEE;
+  --clr-pear: #72A84A;
   --clr-pistachio: #D8EACB;
 }
 
@@ -37,3 +39,71 @@ ul {
 }
 
 a { text-decoration: none; }
+
+
+/* ############ */
+/* HEADER & NAV */
+/* ------------ */
+
+header {
+  background: var(--clr-fog);
+  display: flex;
+  justify-content: space-between;
+}
+
+.li-nav { margin-bottom: 1em; }
+
+.li-nav--exit { margin-bottom: 2em; }
+
+.ul-nav {
+  background: var(--clr-pear);
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ------------ */
+
+.a-logo {
+  color: black;
+  font-weight: bold;
+}
+
+.a-nav {
+  border: 1px solid transparent;
+  color: #333;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .625em 0;
+  text-align: center;
+}
+
+.a-nav--exit { padding: 0; }
+
+.a-nav:focus,
+.a-nav:hover { border: 1px solid #333; }
+
+.a-nav--exit:focus,
+.a-nav--exit:hover { border-color: transparent; }
+
+/* ------------ */
+
+.img-nav-exit {
+  margin-left: auto;
+  width: 30px;
+}
+
+.img-nav-open { cursor: pointer; }
+
+
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
