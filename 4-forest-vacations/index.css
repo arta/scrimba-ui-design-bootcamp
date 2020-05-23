@@ -37,6 +37,8 @@ h1,
 h2,
 p { margin-top: 0; }
 
+/* ---------- */
+
 h1 { margin-bottom: 0; }
 
 ul {
@@ -47,7 +49,21 @@ ul {
 
 a { text-decoration: none; }
 
+/* ---------- */
+
+.h2-featured-cabin {
+  color: var(--clr-pear);
+  font-size: 1.4rem;
+}
+
+.li-featured-cabin { margin-bottom: 4.25em; }
+
 .p-strapline { padding-bottom: .5em; }
+
+.ul-featured-cabins {
+  margin: 0 auto;
+  width: 60%;
+}
 
 .span-h1 { display: block; }
 
@@ -58,10 +74,17 @@ a { text-decoration: none; }
   display: inline-block;
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 5em auto;
+  margin: 4em auto;
   padding: .5em 1.5em;
 }
 
+.a-featured-cabin-cta {
+  border-radius: .2em;
+  color: white;
+  padding: .125em 1em;
+}
+
+.a-featured-cabin-cta:hover { background: var(--clr-pear); }
 
 /* ############ */
 /* HEADER & NAV */
@@ -126,16 +149,12 @@ header {
 .img-exit-nav,
 .img-open-nav { width: 30px; }
 
-.img-a-featured-cabin { display: inline; }
-
 .img-open-nav { cursor: pointer; }
 
 
 /* ###### */
 /* LAYOUT */
 /* ------ */
-
-/* .col-left--main-copy { margin-bottom: 3em; } */
 
 .hero-forest {
   background: url(images/forest.jpg);
@@ -149,6 +168,21 @@ header {
 }
 
 .wrapper-hero-forest { padding-top: 3em; }
+
+
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+.img-featured-cabin-a,
+.img-arrow-a-featured-cabin-cta { display: inline; }
+
+.img-featured-cabin-a {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+  margin-bottom: 1em;
+}
+
+.img-arrow-a-featured-cabin-cta { margin-left: .5em; }
 
 
 /* ##### */
