@@ -214,16 +214,16 @@ header {
 /* IMAGES */
 /* ------ */
 
+.img-arrow-a-featured-cabin-cta,
 .img-featured-cabin-a,
-.img-icon,
-.img-arrow-a-featured-cabin-cta { display: inline; }
+.img-icon { display: inline; }
 
-.img-featured-cabin-a {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
-  margin-bottom: 1em;
-}
+.img-featured-cabin-a,
+.img-icon { margin-bottom: 1em; }
 
 .img-arrow-a-featured-cabin-cta { margin-left: .5em; }
+
+.img-featured-cabin-a { box-shadow: 10px 10px 10px rgba(0, 0, 0, .2); }
 
 
 /* ##### */
