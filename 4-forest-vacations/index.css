@@ -62,6 +62,17 @@ a { text-decoration: none; }
 
 /* ---------- */
 
+.blockquote-main {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.blockquote-testimonial {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 .h2-featured-cabin {
   color: var(--clr-pear);
   font-size: 1.4rem;
@@ -73,17 +84,6 @@ a { text-decoration: none; }
 }
 
 .li-testimonial { margin-bottom: 3em; }
-
-.blockquote-main {
-  font-size: 2rem;
-  font-style: italic;
-  margin-bottom: 1em;
-}
-
-.blockquote-testimonial {
-  font-size: 1.1rem;
-  font-style: italic;
-}
 
 .p-feature { color: var(--clr-smoke); }
 
@@ -185,8 +185,6 @@ header {
   visibility: hidden;
 }
 
-.display-nav { visibility: visible; }
-
 /* ------------ */
 
 .a-logo {
@@ -222,6 +220,10 @@ header {
 .img-open-nav { width: 30px; }
 
 .img-open-nav { cursor: pointer; }
+
+/* ------------ */
+
+.display-nav { visibility: visible; }
 
 
 /* ###### */
