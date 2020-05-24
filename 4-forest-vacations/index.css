@@ -4,6 +4,7 @@
 
 :root {
   --clr-fog: #EEE;
+  --clr-smoke: #DDD;
   --clr-pear: #72A84A;
   --clr-pistachio: #D8EACB;
 }
@@ -37,9 +38,17 @@ h1,
 h2,
 p { margin-top: 0; }
 
+.li-feature,
+.li-featured-cabin  { margin-bottom: 4.25em; }
+
 /* ---------- */
 
 h1 { margin-bottom: 0; }
+
+p {
+  font-size: .95rem;
+  line-height: 1.6;
+}
 
 ul {
   list-style: none;
@@ -57,16 +66,17 @@ a { text-decoration: none; }
 }
 
 .li-featured-cabin {
-  margin-bottom: 4.25em;
   /* Containing block (CB) of .a-featured-cabin-cta::after */
   position: relative;
 }
 
+.p-feature { color: var(--clr-smoke); }
+
 .p-strapline { padding-bottom: .5em; }
 
-.p-featured-cabin {
-  font-size: .95rem;
-  line-height: 1.4;
+.ul-features {
+  margin: 3em auto;
+  width: 70%;
 }
 
 .ul-featured-cabins {
@@ -181,6 +191,11 @@ header {
 /* LAYOUT */
 /* ------ */
 
+.container-features {
+  background: #1A1A1A;
+  color: white;
+}
+
 .hero-forest {
   background: url(images/forest.jpg);
   background-size: cover;
@@ -200,6 +215,7 @@ header {
 /* ------ */
 
 .img-featured-cabin-a,
+.img-icon,
 .img-arrow-a-featured-cabin-cta { display: inline; }
 
 .img-featured-cabin-a {
