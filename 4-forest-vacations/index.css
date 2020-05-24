@@ -171,7 +171,11 @@ a { text-decoration: none; }
   color: white;
 }
 
-.container-testimonials { margin-top: 2em; }
+.container-testimonials {
+  margin-top: 2em;
+  /* CB of .img-fern */
+  position: relative;
+}
 
 .hero-forest {
   background: url(images/forest.jpg);
@@ -201,6 +205,15 @@ a { text-decoration: none; }
 .img-arrow-a-featured-cabin-cta { margin-left: .5em; }
 
 .img-featured-cabin-a { box-shadow: 10px 10px 10px rgba(0, 0, 0, .2); }
+
+.img-fern {
+  /* CB is .container-testimonials */
+  opacity: .08;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+}
 
 .img-testimonial {
   border-radius: 50%;
