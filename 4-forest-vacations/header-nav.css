@@ -1,0 +1,66 @@
+/* ############ */
+/* HEADER & NAV */
+/* ------------ */
+
+header {
+  background: var(--clr-fog);
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+.li-nav { margin-bottom: 1em; }
+
+.li-nav--exit-nav { margin-bottom: 4em; }
+
+.ul-nav {
+  background: var(--clr-pear);
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  visibility: hidden;
+}
+
+/* ------------ */
+
+.a-logo {
+  color: black;
+  font-weight: bold;
+}
+
+.a-nav {
+  border: 1px solid transparent;
+  color: #333;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .625em 0;
+  text-align: center;
+}
+
+.a-nav:focus,
+.a-nav:hover { border-color: #333; }
+
+.a-nav--exit-nav {
+  border: none;
+  margin-left: auto;
+  padding: 0;
+  position: absolute;
+  top: .33em; /* ~ 8px = 1/2 of 16px = .5em of header */
+  right: .33em;
+}
+
+/* ------------ */
+
+.img-exit-nav,
+.img-open-nav { width: 30px; }
+
+.img-open-nav { cursor: pointer; }
+
+/* ------------ */
+
+.display-nav { visibility: visible; }
