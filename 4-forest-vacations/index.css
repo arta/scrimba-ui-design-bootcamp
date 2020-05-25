@@ -157,6 +157,10 @@ a { text-decoration: none; }
   width: 65%;
 }
 
+@media (min-width: 550px) {
+
+}
+
 
 /* ###### */
 /* LAYOUT */
