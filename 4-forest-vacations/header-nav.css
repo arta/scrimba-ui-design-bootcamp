@@ -69,3 +69,7 @@ header {
 /* ------------ */
 
 .display-nav { visibility: visible; }
+
+@media (min-width: 550px) {
+  header { padding: .7em; }
+}

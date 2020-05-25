@@ -159,6 +159,46 @@ a { text-decoration: none; }
 
 @media (min-width: 550px) {
 
+  .blockquote-testimonial,
+  .cite-testimonial {
+    margin-right: 0;
+    margin-left: 2em;
+  }
+
+  h1 { font-size: 2.4rem; }
+
+  .h2-feature {
+    align-self: start;
+    font-size: 1.3rem;
+    order: 1;
+  }
+
+  .li-feature {
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    place-items: center;
+  }
+
+  .li-featured-cabin { margin-bottom: 5em; }
+
+  .li-testimonial {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .p-feature { grid-row: span 2; text-align: left; }
+
+  .ul-features { width: 75%; }
+
+  .a-featured-cabin-cta::after {
+    bottom: -1.375em;
+    width: 70%;
+  }
+
+  .col-testimonial { flex-basis: 70%; text-align: left; }
+
 }
 
 
@@ -223,6 +263,15 @@ a { text-decoration: none; }
   border-radius: 50%;
   margin: 0 auto;
   width: 50px;
+}
+
+@media (min-width: 550px) {
+
+  .img-testimonial {
+    margin: unset;
+    height: 60px; width: 60px;
+  }
+
 }
 
 
