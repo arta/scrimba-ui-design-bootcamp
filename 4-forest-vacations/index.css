@@ -193,6 +193,13 @@ a { text-decoration: none; }
 
   .ul-features { width: 75%; }
 
+  .ul-featured-cabins {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4vw;
+    width: 94%;
+  }
+
   .a-featured-cabin-cta::after {
     bottom: -1.375em;
     width: 70%;
