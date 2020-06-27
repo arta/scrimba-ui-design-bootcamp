@@ -39,6 +39,7 @@ header {
 
 .a-nav {
   border: 1px solid transparent;
+  border-radius: 3px;
   color: #333;
   display: block;
   font-size: 1.5rem;
@@ -48,7 +49,10 @@ header {
 }
 
 .a-nav:focus,
-.a-nav:hover { border-color: #333; }
+.a-nav:hover {
+  background-color: var(--clr-pearshine);
+  color: black;
+}
 
 .a-nav--exit-nav {
   border: none;
@@ -71,5 +75,37 @@ header {
 .display-nav { visibility: visible; }
 
 @media (min-width: 550px) {
+
+  .li-nav--exit-nav,
+  .img-open-nav { display: none; }
+
   header { padding: .7em; }
+
+  .li-nav {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .ul-nav {
+    background: transparent;
+    padding: 0;
+    position: unset;
+    width: unset;
+    height: unset;
+    z-index: unset;
+    visibility: unset;
+  }
+
+  .a-nav {
+    display: unset;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: .125em .75em;
+  }
+
+  .a-nav--res {
+    background: var(--clr-pistachio);
+    font-weight: bold;
+  }
+
 }
