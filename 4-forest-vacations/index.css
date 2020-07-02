@@ -189,7 +189,10 @@ a { text-decoration: none; }
     justify-content: center;
   }
 
-  .p-feature { grid-row: span 2; text-align: left; }
+  .p-feature {
+    grid-row: span 2;
+    text-align: left;
+  }
 
   .ul-features { width: 75%; }
 
@@ -205,7 +208,56 @@ a { text-decoration: none; }
     width: 70%;
   }
 
-  .col-testimonial { flex-basis: 70%; text-align: left; }
+  .col-left--bio {
+    margin: 0 auto;
+    max-width: 580px;
+  }
+
+  .col-testimonial { text-align: left; }
+
+}
+
+@media (min-width: 900px) {
+
+  h1 { font-size: 3em; }
+
+  .blockquote-main { font-size: 2.8em; }
+
+  .cite-main { font-size: 1.5em; }
+
+  .flex {
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+    width: 94%;
+  }
+
+  .flex--testimonials {
+    max-width: 800px;
+  }
+
+  .col-left { flex-basis: 34%; }
+
+  .li-feature { display: unset; }
+
+  .li-testimonial { justify-content: flex-end;}
+
+  .p-feature { text-align: center; }
+
+  .ul-featured-cabins,
+  .ul-testimonials { flex-basis: 66%; }
+
+  .ul-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4vw;
+    width: 94%;
+  }
+
+  .a-featured-cabin-cta::after {
+    margin: unset;
+    width: unset;
+  }
 
 }
 
