@@ -16,11 +16,11 @@ body { background: white; }
   filter: blur(6px);
   margin: auto;
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
-  width: 4em;
+  width: 8em;
   z-index: -1;
 }
 
@@ -30,39 +30,57 @@ body { background: white; }
 }
 
 .a-featured-cabin-cta {
-  background: var(--clr-pistachio);
   color: unset;
   transition: .15s ease-in-out;
 }
 
-.a-featured-cabin-cta:hover { background: var(--clr-pear); }
+.a-featured-cabin-cta:hover { background: var(--clr-pearshine); }
 
-.a-featured-cabin-cta::after { display: none; }
+.a-featured-cabin-cta::after {
+  background: #333;
+  margin: auto;
+  width: 60%;
+}
 
 .hero-sub {
   background: url('images/forest-bg-2.jpg');
   background-size: cover;
-  height: 85vh;
+  height: 50vh;
 }
 
 .breadcrumbs {
   display: flex;
-  position: relative;
-  /* z-index: 10; */
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 .breadcrumbs li + li { margin-left: .25em; }
 
-.main-copy { margin-top: 5em; }
+.main-copy {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
 
 @media (min-width: 900px) {
 
-  .p-sub-desc { font-size: 1.1em; padding-left: 2em; }
+  .main-copy,
+  .ul-featured-cabins { margin-left: 2em; }
+
+  .p-sub-desc { font-size: 1.1em; }
+
+  .ul-featured-cabins {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .breadcrumbs {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
 
   .main-copy {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 2em;
     text-align: left;
     max-width: 900px;
     width: 94%;
