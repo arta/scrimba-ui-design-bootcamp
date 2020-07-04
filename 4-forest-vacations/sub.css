@@ -1,5 +1,70 @@
+body { background: white; }
+
+.h1-main-copy { margin-bottom: 1em; }
+
+.h2-featured-cabin {
+  color: #333;
+  position: relative;
+  text-shadow: 3px 3px105px var(--clr-pistachio);
+  z-index: 10;
+}
+
+.h2-featured-cabin::before {
+  background: var(--clr-pistachio);
+  border-radius: 50%;
+  content: '';
+  filter: blur(6px);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 4em;
+  z-index: -1;
+}
+
+.p-sub-desc {
+  margin: 0 auto 2em;
+  max-width: 640px;
+}
+
+.a-featured-cabin-cta {
+  background: var(--clr-pistachio);
+  color: unset;
+  transition: .15s ease-in-out;
+}
+
+.a-featured-cabin-cta:hover { background: var(--clr-pear); }
+
+.a-featured-cabin-cta::after { display: none; }
+
 .hero-sub {
-    background: url('images/forest-bg-2.jpg');
-    background-size: cover;
-    height: 70vh;
+  background: url('images/forest-bg-2.jpg');
+  background-size: cover;
+  height: 85vh;
+}
+
+.breadcrumbs {
+  display: flex;
+  position: relative;
+  /* z-index: 10; */
+}
+
+.breadcrumbs li + li { margin-left: .25em; }
+
+.main-copy { margin-top: 5em; }
+
+@media (min-width: 900px) {
+
+  .p-sub-desc { font-size: 1.1em; padding-left: 2em; }
+
+  .main-copy {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 900px;
+    width: 94%;
+  }
 }

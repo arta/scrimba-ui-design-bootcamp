@@ -139,7 +139,7 @@ a { text-decoration: none; }
   border-radius: .2em;
   color: white;
   font-weight: bold;
-  padding: .125em 1em;
+  padding: .15em 1em;
 }
 
 .a-featured-cabin-cta:hover { background: var(--clr-pear); }
@@ -295,9 +295,7 @@ a { text-decoration: none; }
     width: 94%;
   }
 
-  .flex--testimonials {
-    max-width: 800px;
-  }
+  .flex--testimonials { max-width: 800px; }
 
   .col-left { flex-basis: 34%; }
 
