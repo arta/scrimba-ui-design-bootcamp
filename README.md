@@ -1,5 +1,5 @@
-Completed coursework of **The UI Design Bootcamp** \
-by Gary Simon
+Completed coursework of Scrimba's **The UI Design Bootcamp** \
+(a course by **Gary Simon**)
 
 [GitHub Page](https://arta.github.io/scrimba-ui-design-bootcamp/) of this repo
 
